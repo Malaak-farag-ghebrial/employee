@@ -6,5 +6,7 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v3
+      - name: gradle
+        run: gradle init
       - name: Build the app
         run: gradle build --dry-run
