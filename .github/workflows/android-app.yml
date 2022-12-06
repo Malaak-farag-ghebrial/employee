@@ -10,3 +10,5 @@ jobs:
         run: gradle init
       - name: Build the app
         run: gradle build --dry-run
+      - name: release
+        run: flutter run --release
