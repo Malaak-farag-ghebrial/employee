@@ -1,4 +1,4 @@
-name: Deploy iOS and Android App to App Store and Play Store
+name: Deploy android app
 on:
   push:
     tags:
@@ -18,7 +18,7 @@ jobs:
           flutter-version: 
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1.2'
+          ruby-version: 
       - name: Install Fastlane
         run: cd android && bundle install && cd ..
       - name: Install packages
